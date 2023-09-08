@@ -1,0 +1,275 @@
+@import url( <link href="https://fonts.googleapis.com/css?family=Raleway:800,700,  600,500, 400|Roboto" rel="stylesheet">);
+
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #1a1a1a;
+}
+/* styles to make borders not take on extra space */ 
+* {
+  -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+
+html, body { 
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  }
+
+/* Browser style reset so they all play nice */ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, time, mark, audio, video { 
+	font-size: 100%; 
+	margin: 0; 
+	padding: 0; 
+	outline: 0 none; 
+	vertical-align: baseline; 
+}
+
+
+/* Now we Start coding */
+h1 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  letter-spacing: 1px;
+}
+h2 {
+  color: #ed1c24;
+  font-family: "Roboto", sans-serif;
+  font-size: 28pt;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #595c5f;
+  text-align: center;
+  font-family: "anton", sans-serif;
+  font-weight: 700;
+  font-size: 30pt;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  text-decoration: underline;
+  margin: 120px 24px 48px 24px;
+  
+}
+
+h4 {
+  display: block;
+  font-family: "anton", sans-serif;
+  font-weight: 300;
+  color: #ed1c24;
+  font-size: 26pt;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  
+  margin-top: 80px;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 24px;
+  
+}
+
+p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16pt;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 1.6;
+  
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-top: -8px;
+ 
+}
+
+header {
+  height: 100%;
+  
+ 
+}
+
+.container-fluid {
+  height: 100%;
+  padding: 0;
+}
+.row {
+  height: 100%;
+  
+}
+
+#image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-bottom: 1px solid #ed1c24;
+  object-fit: cover;
+}
+
+.headline-box {
+  display: block;
+  background-color: rgba(26, 26, 26, 0.95);
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 750px;
+  height: 250px;
+}
+
+.logo {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 150px;
+  height: 150px;
+}
+
+#title {
+    position: absolute;
+  top: 50%;
+  left: 260px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#title h2 {
+  position: relative;
+  bottom: 4px;
+}
+/* ===== main article ===== */
+
+#img-div {
+  display: block;
+  float: left;
+  margin-bottom: 16px;
+  margin-left: 240px;
+  margin-right: 40px;
+  border: 4px solid #595c5f;
+  border-radius: 8px;
+}
+
+#tribute-info * {
+  color: #C2C3C4;
+}
+
+footer {
+  
+  background-color: #595c5f;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+  }
+
+#tribute-link h2 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  margin: 40px 160px 40px 160px;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+
+
+
+/* ===== For mobiles ===== */
+
+
+@media screen and (max-width: 1200px){
+  
+   #img-div {
+  margin-left: 80px;
+}
+  
+  h4 {
+  margin-left: 80px;
+  }
+  p {
+  margin-left: 80px;
+  margin-right: 80px;
+  }
+  
+}
+@media screen and (max-width: 1000px) {
+  
+  h1 {
+   font-size: 26pt;
+  }
+  h2 {
+   font-size: 24pt;
+  }
+  
+  h3 {
+ text-align: center; 
+ margin-bottom: 24px;
+ margin-left: 40px;
+ margin-right: 40px;
+ font-size: 30pt;
+  }
+  
+h4 {
+    width: 100%;
+    margin:0;
+    padding-top: 80px;
+    text-align: center;
+  }
+  
+  p {
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 16pt;
+    letter-spacing: 3px;
+    text-align: justify;
+  }
+  
+ #img-div {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  float: none;
+  } 
+ }
+    
+@media screen and (max-width: 830px) {
+  
+   .headline-box {
+   width: 100%; 
+   height: 160px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #title {
+  left: 196px;
+  }
+     
+ h3 {
+  font-size: 24pt;
+  }
+  
+   h4 {
+   text-align: center;
+   font-size: 22pt;
+  }
+ }
